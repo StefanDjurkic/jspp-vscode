@@ -30,6 +30,7 @@
     "c++",
     "cpp"
   ],
+  "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#1e1e2e",
     "theme": "dark"
@@ -53,7 +54,11 @@
       {
         "language": "jspp",
         "scopeName": "source.jspp",
-        "path": "./syntaxes/jspp.tmLanguage.json"
+        "path": "./syntaxes/jspp.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.cpp": "cpp",
+          "meta.embedded.line.jspp": "jspp"
+        }
       }
     ],
     "snippets": [
