@@ -1,0 +1,30 @@
+// JSPP sample — open to preview syntax highlighting
+
+import { add } from "./mathlib";
+
+type Point = {
+    x: float;
+    y: float;
+};
+
+class Entity extends Base {
+    constructor(name: string) {
+        super();
+        this.name = name;
+    }
+
+    function greet(): void {
+        const msg: string = `hello, ${this.name}!`;
+        console.log(msg);
+    }
+}
+
+function fib(n: int): int {
+    if (n < 2) return n;
+    return fib(n - 1) + fib(n - 2);
+}
+
+const nums: int[] = [1, 2, 3, 0xFF, 0b1010, 3.14];
+for (const x of nums) {
+    cpp { std::cout << "x = " << x << std::endl; }
+}

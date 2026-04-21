@@ -1,0 +1,162 @@
+{
+  "Function declaration": {
+    "prefix": "fn",
+    "body": [
+      "function ${1:name}(${2:params}): ${3:void} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "JSPP function declaration"
+  },
+  "Arrow function": {
+    "prefix": "af",
+    "body": [
+      "const ${1:name} = (${2:params}): ${3:auto} => {",
+      "\t$0",
+      "};"
+    ],
+    "description": "Arrow function assigned to const"
+  },
+  "Let binding": {
+    "prefix": "let",
+    "body": ["let ${1:name}: ${2:int} = ${3:0};"],
+    "description": "Typed let binding"
+  },
+  "Const binding": {
+    "prefix": "const",
+    "body": ["const ${1:name}: ${2:int} = ${3:0};"],
+    "description": "Typed const binding"
+  },
+  "If statement": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "If / else": {
+    "prefix": "ife",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$2",
+      "} else {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "For loop": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i}: int = 0; ${1:i} < ${2:n}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "For-of loop": {
+    "prefix": "forof",
+    "body": [
+      "for (const ${1:item} of ${2:collection}) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "While loop": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condition}) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Class declaration": {
+    "prefix": "class",
+    "body": [
+      "class ${1:Name} {",
+      "\tconstructor(${2:params}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ]
+  },
+  "Class extending": {
+    "prefix": "classe",
+    "body": [
+      "class ${1:Name} extends ${2:Parent} {",
+      "\tconstructor(${3:params}) {",
+      "\t\tsuper(${4:args});",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ]
+  },
+  "Type declaration": {
+    "prefix": "type",
+    "body": [
+      "type ${1:Name} = {",
+      "\t${2:field}: ${3:int};",
+      "\t$0",
+      "};"
+    ]
+  },
+  "Enum declaration": {
+    "prefix": "enum",
+    "body": [
+      "enum ${1:Name} {",
+      "\t${2:Variant},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Switch statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:value}) {",
+      "\tcase ${2:pattern}:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\tbreak;",
+      "}"
+    ]
+  },
+  "Try / catch": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t$1",
+      "} catch (${2:err}) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Import named": {
+    "prefix": "imp",
+    "body": ["import { ${1:name} } from \"${2:./module}\";"]
+  },
+  "Import namespace": {
+    "prefix": "impall",
+    "body": ["import * as ${1:name} from \"${2:./module}\";"]
+  },
+  "Export function": {
+    "prefix": "expfn",
+    "body": [
+      "export function ${1:name}(${2:params}): ${3:void} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "C++ raw block": {
+    "prefix": "cpp",
+    "body": [
+      "cpp {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Inline C++ block"
+  },
+  "C++ include": {
+    "prefix": "cppinc",
+    "body": ["cpp_include \"${1:<vector>}\";"]
+  }
+}

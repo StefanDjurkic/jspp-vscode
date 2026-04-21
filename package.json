@@ -1,0 +1,66 @@
+{
+  "name": "jspp",
+  "displayName": "JSPP (JavaScript++)",
+  "description": "Syntax highlighting, snippets, and language configuration for JSPP — JavaScript syntax, C++ performance.",
+  "version": "0.1.0",
+  "publisher": "StefanDjurkic",
+  "license": "MIT",
+  "author": {
+    "name": "Stefan Djurkic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StefanDjurkic/jspp-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StefanDjurkic/jspp-vscode/issues"
+  },
+  "homepage": "https://github.com/StefanDjurkic/jspp",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "jspp",
+    "javascript++",
+    "transpiler",
+    "c++",
+    "cpp"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e2e",
+    "theme": "dark"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "jspp",
+        "aliases": [
+          "JSPP",
+          "JavaScript++",
+          "jspp"
+        ],
+        "extensions": [
+          ".jspp"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jspp",
+        "scopeName": "source.jspp",
+        "path": "./syntaxes/jspp.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "jspp",
+        "path": "./snippets/jspp.code-snippets"
+      }
+    ]
+  }
+}
