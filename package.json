@@ -2,7 +2,7 @@
   "name": "jspp",
   "displayName": "JSPP (JavaScript++)",
   "description": "Syntax highlighting, snippets, and language configuration for JSPP — JavaScript syntax, C++ performance.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "StefanDjurkic",
   "license": "MIT",
   "author": {
@@ -47,7 +47,11 @@
         "extensions": [
           ".jspp"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/icon.png",
+          "dark": "./images/icon.png"
+        }
       }
     ],
     "grammars": [
